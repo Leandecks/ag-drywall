@@ -133,24 +133,12 @@ nav ul li a:hover {
 }
 
 .grid .gallery {
-  border: 0;
-  background-color: var(--prime);
-  color: var(--second);
-  font-family: "Sunflower", "Roboto", sans-serif;
-  font-size: 4rem;
-  padding: 0 3rem;
-  cursor: pointer;
-  transition: all 250ms ease;
-  border: solid var(--prime);
+  font-size: 2rem;
   font-style: italic;
-  text-align: center;
-  text-decoration: none;
-}
-
-.grid .gallery:hover {
-  background-color: var(--second);
   color: var(--prime);
-  border: solid;
+  font-weight: bold;
+  padding: .2rem 1rem;
+  border-radius: 2rem;
 }
 
 form {
