@@ -60,6 +60,19 @@ nav ul li a:hover {
   color: var(--prime);
 }
 
+.nav-logo {
+  height: 9rem;
+  width: auto;
+  margin-top: 7rem;
+  border: solid .3rem var(--second);
+  border-radius: 50%;
+  transition: all 400ms ease;
+}
+
+.nav-logo:hover {
+  transform: rotate(360deg);
+}
+
 .hero {
   background-image: url("img/hero.jpg");
   height: 92vh;
@@ -86,13 +99,17 @@ nav ul li a:hover {
 }
 
 .hero h1 {
-  font-size: 3rem;
-  text-decoration: underline;
-  text-decoration-thickness: .25rem;
+  font-size: 5rem;
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--prime);
+  border-radius: 1rem;
+  border: solid .3rem var(--second);
 }
 
 .hero p {
-  font-size: 1.7rem;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 .section {
@@ -141,7 +158,7 @@ nav ul li a:hover {
   padding: 0 3rem;
   cursor: pointer;
   transition: all 250ms ease;
-  border: solid var(--prime);
+  border: solid .3rem var(--prime);
   font-style: italic;
   text-align: center;
   text-decoration: none;
@@ -150,7 +167,7 @@ nav ul li a:hover {
 .grid .gallery:hover {
   background-color: var(--second);
   color: var(--prime);
-  border: solid;
+  border: solid .3rem;
 }
 
 form {
@@ -205,13 +222,13 @@ form button {
   border-radius: 2rem;
   cursor: pointer;
   transition: all 250ms ease;
-  border: solid var(--prime)
+  border: solid .3rem var(--prime)
 }
 
 form button:hover {
   background-color: var(--second);
   color: var(--prime);
-  border: solid;
+  border: solid .3rem;
 }
 
 form input:focus,
@@ -267,7 +284,7 @@ dialog button {
   border: 0;
   font-size: 3rem;
   transition: all 250ms ease;
-  border: solid var(--prime);
+  border: solid .3rem var(--prime);
 }
 
 dialog button.x {
@@ -327,6 +344,16 @@ dialog p {
 
   .grid > img:hover {
     box-shadow: .5rem .5rem var(--prime);
+  }
+}
+
+@media only screen and (max-width: 754px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  nav ul li {
+    display: none;
   }
 }
 

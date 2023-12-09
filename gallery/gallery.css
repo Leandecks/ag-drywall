@@ -35,6 +35,7 @@ nav {
   justify-content: center;
   align-items: center;
   font-size: 1.4rem;
+  margin-bottom: 6rem;
 }
 
 nav ul {
@@ -60,39 +61,17 @@ nav ul li a:hover {
   color: var(--prime);
 }
 
-.hero {
-  background-image: url("img/hero.jpg");
-  height: 92vh;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  color: var(--second);
-}
-
-.hero .logo {
-  height: 10rem;
+.nav-logo {
+  height: 9rem;
   width: auto;
-}
-
-.hero a {
+  margin-top: 7rem;
+  border: solid .3rem var(--second);
+  border-radius: 50%;
   transition: all 400ms ease;
 }
 
-.hero a:hover {
+.nav-logo:hover {
   transform: rotate(360deg);
-}
-
-.hero h1 {
-  font-size: 3rem;
-  text-decoration: underline;
-  text-decoration-thickness: .25rem;
-}
-
-.hero p {
-  font-size: 1.7rem;
 }
 
 .section {
@@ -104,7 +83,7 @@ nav ul li a:hover {
   align-items: center;
 }
 
-.section h2 {
+.section h1 {
   background-color: var(--prime);
   color: var(--second);
   padding: .2rem 1rem;
@@ -118,7 +97,7 @@ nav ul li a:hover {
   display: grid;
   gap: 2rem;
   place-items: center;
-  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  grid-template: repeat(2, 1fr) / repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .grid img {
@@ -133,84 +112,24 @@ nav ul li a:hover {
 }
 
 .grid .gallery {
-  font-size: 2rem;
-  font-style: italic;
-  color: var(--prime);
-  font-weight: bold;
-  padding: .2rem 1rem;
-  border-radius: 2rem;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.form {
-  display: flex;
-  gap: .5rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.inputs {
-  display: flex;
-  flex-direction: column;
-  gap: .5rem;
-}
-
-form input {
-  font-family: "Sunflower", "Roboto", sans-serif;
-  border: 0;
-  padding: .2rem 1rem;
-  border-radius: 1rem;
-  font-size: 1.3rem;
-  width: 40rem;
-  height: 4rem;
-}
-
-form textarea {
-  font-family: "Sunflower", "Roboto", sans-serif;
-  resize: none;
-  font-size: 1.3rem;
-  border: 0;
-  border-radius: 1rem;
-  padding: 1rem;
-  width: 40rem;
-  height: 17.5rem;
-}
-
-form button {
   border: 0;
   background-color: var(--prime);
-  color: white;
+  color: var(--second);
   font-family: "Sunflower", "Roboto", sans-serif;
-  padding: .2rem 1.5rem;
-  font-size: 1.3rem;
-  border-radius: 2rem;
+  font-size: 4rem;
+  padding: 0 3rem;
   cursor: pointer;
   transition: all 250ms ease;
-  border: solid var(--prime)
+  border: solid .3rem var(--prime);
+  font-style: italic;
+  text-align: center;
+  text-decoration: none;
 }
 
-form button:hover {
+.grid .gallery:hover {
   background-color: var(--second);
   color: var(--prime);
-  border: solid;
-}
-
-form input:focus,
-form textarea:focus {
-  outline: solid .2rem var(--prime);
-}
-
-form input::selection,
-form textarea::selection {
-  background-color: var(--prime);
-  color: white;
+  border: solid .3rem;
 }
 
 footer {
@@ -255,7 +174,7 @@ dialog button {
   border: 0;
   font-size: 3rem;
   transition: all 250ms ease;
-  border: solid var(--prime);
+  border: solid .3rem var(--prime);
 }
 
 dialog button.x {
@@ -298,45 +217,21 @@ dialog p {
   font-size: 1.5rem;
 }
 
-@media only screen and (max-width: 1062px) {
-  .form {
-    flex-direction: column;
-  }
-}
-
 @media only screen and (max-width: 924px) {
-  .grid {
-    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-  }
-
-  .section {
-    margin: 1.5rem;
-  }
-
   .grid > img:hover {
     box-shadow: .5rem .5rem var(--prime);
   }
 }
 
+@media only screen and (max-width: 754px) {
+  nav ul li {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 617px) {
-  .grid {
-    grid-template: repeat(6, 1fr) / 1fr;
-  }
-
-  .section {
-    margin: 1rem;
-  }
-
   nav ul {
     gap: 2rem;
-  }
-
-  form,
-  .form,
-  .inputs,
-  form input,
-  form textarea {
-    width: 100%;
   }
 
   dialog button {

@@ -15,14 +15,14 @@
   <header>
     <nav>
       <ul>
-        <li><a href="#about">Chi sono</a></li>
-        <li><a href="#work">Il mio lavoro</a></li>
-        <li><a href="#contact">Contatti</a></li>
-        <li><a href="gallery/gallery.html">Galleria</a></li>
+        <li><a href="#about" class="about-link">Chi sono</a></li>
+        <li><a href="gallery/gallery.html" class="gallery-link">Galleria</a></li>
+        <a href="#" class="nav-logo-link"><img src="icons/android-chrome-192x192.png" alt="Logo" class="nav-logo"></a>
+        <li><a href="#work" class="work-link">Il mio lavoro</a></li>
+        <li><a href="#contact" class="contact-link">Contatti</a></li>
       </ul>
     </nav>
     <div class="hero">
-      <a href="#"><img src="icons/android-chrome-512x512.png" alt="Logo" class="logo"></a>
       <h1>Andrea Gridelli Drywall</h1>
       <p>Cartongesso e affini dal 1796</p>
     </div>
@@ -37,7 +37,7 @@
       <h2>Cosa creo</h2>
       <p>Ecco qualche esempio dei miei lavori! Clicca per ingrandire</p>
       <div class="grid">
-        <img src="img/work1.jpg" alt="Lavoro 1" class="work1 work" onclick="openDialog(document.querySelector('.d1'));">
+        <img src="img/work1.jpg" alt="Lavoro 1" class="work1 work">
         <dialog>
           <button class="x">✕</button>
           <button class="move-left"><</button>
