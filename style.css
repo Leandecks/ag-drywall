@@ -150,7 +150,6 @@ nav ul li a:hover {
 }
 
 .grid .gallery {
-  border: 0;
   background-color: var(--prime);
   color: var(--second);
   font-family: "Sunflower", "Roboto", sans-serif;
@@ -213,7 +212,6 @@ form textarea {
 }
 
 form button {
-  border: 0;
   background-color: var(--prime);
   color: white;
   font-family: "Sunflower", "Roboto", sans-serif;
@@ -281,7 +279,6 @@ dialog button {
   cursor: pointer;
   background-color: var(--prime);
   border-radius: 50%;
-  border: 0;
   font-size: 3rem;
   transition: all 250ms ease;
   border: solid .3rem var(--prime);
